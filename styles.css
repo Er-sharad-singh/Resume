@@ -1,0 +1,180 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Container Styles */
+.resume-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.resume-container:hover {
+  transform: scale(1.02);
+}
+
+/* Print Button */
+.print-btn-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.print-btn-container a {
+  padding: 10px 20px;
+  background-color: #1f77d0;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.print-btn-container a:hover {
+  background-color: #145ca8;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 42px;
+  color: #1f77d0;
+  margin-bottom: 10px;
+}
+
+.header h3 {
+  font-size: 22px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #1f77d0;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #145ca8;
+}
+
+.mail{
+  text-decoration: none;
+  color: #1b1b2f;
+}
+
+/* Info Section Styles */
+.info-section {
+  margin-top: 30px;
+}
+
+/* Row Layout */
+.row {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.row h2 {
+  color: #1f77d0;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.row p,
+.row ul {
+  font-size: 18px;
+  color: #555;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #f0f8ff;
+  border-left: 4px solid #1f77d0;
+  border-radius: 4px;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #1f77d0;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #1f77d0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #145ca8;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1b1b2f;
+  color: #fff;
+}
+
+body.dark-mode .resume-container {
+  background-color: #2e2e48;
+  color: #ddd;
+}
+
+body.dark-mode .header h1 {
+  color: #4fb2f3;
+}
+
+body.dark-mode .footer {
+  background-color: #4fb2f3;
+}
+
+/* Hide print button when printing */
+@media print {
+  .print-btn-container, #toggleTheme {
+      display: none;
+  }
+}
